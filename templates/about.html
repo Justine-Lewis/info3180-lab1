@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+    <meta charset="UTF-8">
+    <title>My Website - About</title>
 </head>
 <body>
- <h1>JUSTINE LEWIS</h1>
- <p>Music and film are so important to me. My favorite singer RIGHT NOW is Brandy. But my <u>favorite artist of all time</u> is frank ocean. I #lovehim. </p>
+     <h1>JUSTINE LEWIS</h1>
+        <p>Music and film are so important to me. My favorite singer RIGHT NOW is Brandy. But my <u>favorite artist of all time</u> is frank ocean. I #lovehim. </p>
+        <div class="mood">
+             <p>Mood: </p>
+             <img src="{{ url_for('static', filename='lily3.jpg') }}" alt="My photo" width="300">
+        </div>
 </body>
 </html>
